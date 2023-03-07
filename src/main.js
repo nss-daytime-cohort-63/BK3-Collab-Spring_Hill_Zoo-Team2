@@ -1,5 +1,3 @@
-import "./styles.css";
-
 /* 
   Goals of project:
     1. Header for each exhibit of the zoo
