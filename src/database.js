@@ -58,3 +58,9 @@ const database = {
       }
     ]
   }
+
+  export const getAnimals = () => {
+    return database
+  }
+
+  return database.fish.map(fish => ({...fish}))
