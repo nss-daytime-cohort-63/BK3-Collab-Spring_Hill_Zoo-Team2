@@ -28,7 +28,7 @@ const database = {
         exhibitId: 2
       },
     ],
-    exhibit: [
+    exhibits: [
       {
         id: 1,
         name: "Reptile Excursion",
@@ -60,7 +60,13 @@ const database = {
   }
 
   export const getAnimals = () => {
-    return database
+    return database.animals.map(animal => ({...animal}))
   }
 
-  return database.fish.map(fish => ({...fish}))
+export const getExhibits = () => {
+  return database.exhibits.map(exhibit => ({...exhibit}))
+}
+  
+export const getConcessions = () => {
+  return database.concessions.map(concession => ({...concession}))
+}
